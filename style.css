@@ -1,0 +1,91 @@
+/* Body with Sicilian villa background */
+body {
+  font-family: 'Georgia', serif;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #4b2e07; /* dark brown for a cannoli cream feel */
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Overlay to soften background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 240, 0.6); /* light cream overlay */
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Main container styling */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff8f0; /* cannoli cream */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  padding: 2rem;
+  border: 5px solid #d62e00; /* cannoli shell reddish-brown */
+}
+
+/* Header with a red and white checkered tablecloth */
+.header {
+  background: repeating-linear-gradient(
+    45deg,
+    #d62e00 0,
+    #d62e00 20px,
+    white 20px,
+    white 40px
+  );
+  padding: 1rem 2rem;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #700000;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Cannoli style accent text */
+.cannoli-text {
+  font-style: italic;
+  color: #a85f21; /* golden brown */
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+/* Buttons styled like cannoli filling */
+.button {
+  background-color: #fff2cc; /* ricotta cream */
+  border: 2px solid #d62e00;
+  color: #d62e00;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d62e00;
+  color: white;
+}
+
+/* Footer with checkered pattern as well */
+.footer {
+  background: repeating-linear-gradient(
+    45deg,
+    white 0,
+    white 20px,
+    #d62e00 20px,
+    #d62e00 40px
+  );
+  color: #d62e00;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  font-size: 0.9rem;
+  font-family: 'Courier New', Courier, monospace;
+}
